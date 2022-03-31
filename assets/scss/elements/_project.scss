@@ -1,0 +1,22 @@
+.project{
+    min-height: 100vh;
+
+    .project-content{
+        margin-top: 10rem;
+        margin-left: 13rem;
+
+        .title-project{
+            @extend %font;
+            font-size: 4rem;
+        }
+
+        .project-car{
+            margin-top: 2rem;
+            img{
+                height: 25rem;
+                margin-right: 5rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,135 @@
+/* ---- Screen Rules ---- */
+@media screen and (max-height: 850px) {
+    .home{
+        .title-div{
+            margin-top: 10vh;
+        }
+    }
+}
+
+@media screen and (max-height: 740px) {
+    .home{
+        .title-div{
+            margin-top: 5vh;
+        }
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .home{
+        .title-div{
+            margin-top: 2vh;
+        }
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .home{
+        .changesection{
+            position: relative;
+            bottom: 0;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    body{
+        background: url(../res/background.png) cover fixed no-repeat;
+        background-position: 100% 0%;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .home{
+        .title-div{
+            margin-left: 0;
+            margin-right: 0;
+            margin: auto;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .project{
+        .project-content{
+            margin-left: 0;
+            margin: auto;
+            margin-top: 2rem;
+            width: 90%;
+            text-align: center;
+            .title-project{
+                font-size: 2rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 750px) {
+    body{
+        background-color: black;
+    }
+    .home{
+        .title-div{
+            width: 90%;
+
+            .title-1{
+                margin-top: 4vh;
+                font-size: 6rem;
+            }
+
+            .title-2{
+                font-size: 2rem;
+            }
+            .citation{
+                margin-top: 20px;
+            }
+            .social-content{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                a{
+                    margin: 4px;
+                }
+            }
+
+            .desc{
+                margin: auto;
+                width: 70%;
+            }
+        }
+        .changesection{
+            position: relative;
+            bottom: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .project{
+        .project-content{
+            margin-top: 0;
+            margin-left: 0;
+
+            .title-project{
+                font-size: 2rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project{
+        min-height: auto;
+        margin-bottom: 50px;
+        .project-content{
+           .project-car{
+               img{
+                   height: auto;
+                   width: 80%;
+                   margin-right: 1rem;
+               }
+           }
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+@import "_mixins.scss";
+
+/*========== Base ==========*/
+html {
+    scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../res/background.png) center / cover fixed no-repeat;
+    color: white;
+    font-size: 62.5%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/*==== Home ====*/
+@import "elements/_home.scss";
+
+/*==== Project ====*/
+@import "elements/_project.scss";
+
+
+
+@import "_mediaQueries.scss";
+
+/*========== particles.js container ==========*/
+#particles-js{ 
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+.home .title-div, .changesection p, .project .project-content .title-project {
+  font-family: 'Major Mono Display', monospace;
+}
+
+/*========== Base ==========*/
+html {
+  scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(../res/background.png) center/cover fixed no-repeat;
+  color: white;
+  font-size: 62.5%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/*==== Home ====*/
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home .title-div {
+  margin-top: 20vh;
+  margin-left: 15%;
+  margin-right: 90%;
+  width: 750px;
+}
+
+.home .title-div .title-2 {
+  font-size: xx-large;
+  letter-spacing: 0.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.home .title-div .title-1 {
+  font-size: 9rem;
+  text-align: center;
+}
+
+.home .title-div .citation {
+  margin-top: 50px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.home .title-div .citation p {
+  padding-bottom: 10px;
+}
+
+.home .social-content {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 12em 0 12em;
+}
+
+.home .social-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.home .social-content a .github-content, .home .social-content a .email-content {
+  display: flex;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.041);
+  border-radius: 31px;
+  padding: 10px;
+}
+
+.home .social-content a .github-content img, .home .social-content a .email-content img {
+  margin-right: 10px;
+}
+
+.home .desc {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.changesection {
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.changesection p {
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+/*==== Project ====*/
+.project {
+  min-height: 100vh;
+}
+
+.project .project-content {
+  margin-top: 10rem;
+  margin-left: 13rem;
+}
+
+.project .project-content .title-project {
+  font-size: 4rem;
+}
+
+.project .project-content .project-car {
+  margin-top: 2rem;
+}
+
+.project .project-content .project-car img {
+  height: 25rem;
+  margin-right: 5rem;
+}
+
+/* ---- Screen Rules ---- */
+@media screen and (max-height: 850px) {
+  .home .title-div {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .home .title-div {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .home .title-div {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .home .changesection {
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    background: url(../res/background.png) cover fixed no-repeat;
+    background-position: 100% 0%;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .home .title-div {
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .project .project-content {
+    margin-left: 0;
+    margin: auto;
+    margin-top: 2rem;
+    width: 90%;
+    text-align: center;
+  }
+  .project .project-content .title-project {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-color: black;
+  }
+  .home .title-div {
+    width: 90%;
+  }
+  .home .title-div .title-1 {
+    margin-top: 4vh;
+    font-size: 6rem;
+  }
+  .home .title-div .title-2 {
+    font-size: 2rem;
+  }
+  .home .title-div .citation {
+    margin-top: 20px;
+  }
+  .home .title-div .social-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .home .title-div .social-content a {
+    margin: 4px;
+  }
+  .home .title-div .desc {
+    margin: auto;
+    width: 70%;
+  }
+  .home .changesection {
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  .project .project-content {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .project .project-content .title-project {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project {
+    min-height: auto;
+    margin-bottom: 50px;
+  }
+  .project .project-content .project-car img {
+    height: auto;
+    width: 80%;
+    margin-right: 1rem;
+  }
+}
+
+/*========== particles.js container ==========*/
+#particles-js {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
