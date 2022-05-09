@@ -1,86 +1,91 @@
-.home{
-    width: 100%;
-    min-height: 100vh;
+.home {
+  width: 100%;
+  min-height: 100vh;
 
-    .title-div{
-        @extend %font;
-        margin-top: 20vh;
-        margin-left: 15%;
-        margin-right: 90%;
-        width: 750px;
+  .title-div {
+    @extend %font;
+    margin-top: 20vh;
+    margin-left: 15%;
+    margin-right: 90%;
+    width: 750px;
 
-        .title-2{
-            font-size: xx-large;
-            letter-spacing: 0.5rem;
-            margin: auto;
-            text-align: center;
-        }
-
-        .title-1{
-            font-size: 9rem;
-            text-align: center;
-        }
-
-        .citation{
-            margin-top: 50px;
-            letter-spacing: 0.2rem;
-            text-align: center;
-
-            p{
-                padding-bottom: 10px;
-            }
-        }
+    .title-2 {
+      font-size: xx-large;
+      letter-spacing: 0.5rem;
+      margin: auto;
+      text-align: center;
     }
-    .social-content{
-        margin-top: 50px;
+
+    .title-1 {
+      font-size: 9rem;
+      text-align: center;
+    }
+
+    .citation {
+      margin-top: 50px;
+      letter-spacing: 0.2rem;
+      text-align: center;
+
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .social-content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 12em 0 12em;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      .github-content,
+      .email-content,
+      .linkedin-content {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 0 12em 0 12em;
+        background-color: rgba(196, 196, 196, 0.041);
+        border-radius: 31px;
+        padding: 10px;
 
-        a{
-            color: white;
-            text-decoration: none;
-
-            .github-content, .email-content{
-                display:flex;
-                align-items: center;
-                background-color: rgba(196, 196, 196, 0.041);
-                border-radius: 31px;
-                padding: 10px;
-                
-                img{
-                    margin-right: 10px;
-                }
-    
-                
-            }
+        img {
+          margin-right: 10px;
+          color: white;
         }
+      }
+      .linkedin-content img {
+        filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(58deg)
+          brightness(102%) contrast(101%);
+      }
     }
+  }
 
-    .desc{
-        margin-top: 30px;
-        text-align: center;
-        font-size: 13px;
-        font-family: 'Hind Siliguri', sans-serif;
-    }
+  .desc {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Hind Siliguri", sans-serif;
+  }
 }
 
-.changesection{
-    display: flex;
-    color: white;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-    cursor: pointer;
+.changesection {
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
 
-    p{
-        @extend %font;
-        letter-spacing: 0.2rem;
-        font-size: 1.4rem;
-        text-decoration: underline;
-    }
+  p {
+    @extend %font;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    text-decoration: underline;
+  }
 }
